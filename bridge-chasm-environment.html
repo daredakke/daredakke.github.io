@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <title>Bridge chasm environment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="page-header">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Dreams</a></li>
+                    <li><a href="logs.html">Logs</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main><header class="post-header">
+    <h1>Bridge chasm environment</h1>
+
+    <p class="post-meta">Posted on January 3rd 2025</p>
+</header>
+
+<div class="post-body">Spent last night and this morning putting together a simple environment. It's nothing big, just a large chasm with a narrow bridge you walk across, more of a transition if anything, perhaps a break between platforming sections.<br><br>It's good practice for seeing how the game could feel too.<br><br><div class="body-image"><a href="../images/bridge-room.png"><img src="../images/bridge-room.png" alt="Chasm with bridge crossing it"></a><p>Chasm with bridge crossing it</p></div><br>Creating the level out of larger meshes helped uncover a small bug with my dynamic reverb system where raycasts were basing their distance off of the centre of the mesh rather than the point of collision. Not sure how I missed that but little details often slip through the cracks.<br><br>Other recent work includes adding coyote time that allows the player to jump in the 10 frames after moving off a surface into the air and tweaking how player death works. The dialogue UI and logic are now functioning too, I just need to figure out aesthetics but that's a problem to solve later on.</div></main>
+    </div>
+</body>
+
+</html>

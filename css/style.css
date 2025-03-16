@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+:root {
+    --primary: #ddc422;
+    --red: #dd1d1d;
+    --dark-red: #991818;
+    --darker-grey: #222;
+    --dark-grey: #3a3a3a;
+    --grey: #666;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    background-image: url("../images/ai-lang.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dotted white;
+    display: inline-block;
+    width: 100%;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+}
+
+.page-header {
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+.post-title {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta {
+    color: var(--grey);
+    margin: 0 0 0.5rem;
+}
+
+.post-body {
+    border-top: 1px solid white;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-top: 1.9rem;
+    padding-top: 2rem;
+}
+
+.post-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.body-image a,
+.body-image img {
+    display: block;
+    width: 100%;
+}
+
+.body-image p {
+    font-style: italic;
+    margin: 0;
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.filter-list a {
+    background-color: var(--primary);
+    border-radius: 2px;
+    color: black;
+    display: block;
+    padding: 0.1rem 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.filter-list a:hover {
+    background-color: white;
+}
