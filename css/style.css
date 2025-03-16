@@ -146,3 +146,20 @@ a:hover {
 .filter-list a:hover {
     background-color: white;
 }
+
+.list {
+    margin-bottom: 3.5rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.image-gallery img {
+    object-fit: cover;
+    width: 100%;
+}
